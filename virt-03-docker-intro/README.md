@@ -2,7 +2,7 @@
 ## Задача 1
 https://hub.docker.com/r/troshinvlaad/custom-nginx/tags
 ## Задача 2
-
+Скриншот приложил файлом в формате .png (см. image.png)
 ## Задача 3
 
 ## Задача 4
