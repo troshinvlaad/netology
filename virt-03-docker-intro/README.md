@@ -9,3 +9,5 @@ https://hub.docker.com/repository/docker/troshinvlaad/custom-nginx/general
 * Скриншот приложил файлом в формате .png (см. image_task3.png)
 ## Задача 4
 Скриншот приложил файлом в формате .png (см. image_task4.png)
+## Задача 5
+* 5.1. При выполнении команды docker compose up -d будет запущен только файл docker-compose.yaml, если явно не указать, какой файл использовать. Docker Compose по умолчанию ищет файл с именем docker-compose.yaml или docker-compose.yml в текущей директории. Поскольку файл compose.yaml не соответствует этим именам, он не будет запущен.
