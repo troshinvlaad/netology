@@ -2,9 +2,8 @@
 ## Задача 0
 ![image_task0](https://github.com/troshinvlaad/netology/blob/main/virt-04-docker-in-practice/task_0.PNG?raw=true)
 ## Задача 3
-Запустил команду "curl -L http://127.0.0.1:8090" и увидел ответ в консоли.
 ![image_task_3_1](https://github.com/troshinvlaad/netology/blob/main/virt-04-docker-in-practice/task_3_1.PNG?raw=true)
-
+Запустил команду "curl -L http://127.0.0.1:8090" и увидел ответ в консоли.
 ![image_task_3_2](https://github.com/troshinvlaad/netology/blob/main/virt-04-docker-in-practice/task_3_2.PNG?raw=true)
 
 ![image_task_3_3](https://github.com/troshinvlaad/netology/blob/main/virt-04-docker-in-practice/task_3_3.PNG?raw=true)
