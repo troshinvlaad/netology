@@ -48,7 +48,8 @@ P.S. В наименовании контейнера будет указано 
 Образ nginx:latest может не быть удалён по следующим причинам:
 
 Свойство keep_locally: Если в конфигурации Terraform для ресурса docker_image установлено свойство keep_locally = true, то образ не будет удалён даже при выполнении команды terraform destroy.
-Подтверждение из документации Terraform
+
+Подтверждение из документации Terraform:
 Согласно документации провайдера Docker для Terraform, в разделе о ресурсе docker_image указано:
 
 "The keep_locally argument allows you to specify whether to keep the image locally after it has been used to create containers."
