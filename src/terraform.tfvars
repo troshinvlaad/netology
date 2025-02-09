@@ -1,19 +1,14 @@
-vms_resources = {
-  web = {
-    cores         = 2
-    memory        = 1
-    core_fraction = 20
+each_vm = [
+  {
+    vm_name     = "main"
+    cpu         = 2
+    ram         = 2
+    disk_volume = 20
   },
-  db = {
-    cores         = 2
-    memory        = 2
-    core_fraction = 20
+  {
+    vm_name     = "replica"
+    cpu         = 4
+    ram         = 4
+    disk_volume = 22
   }
-}
-
-# terraform.tfvars
-
-metadata = {
-  serial-port-enable = 1
-  ssh-keys           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOQz3Yj8zg2ilN0HJfb2wC8CxrJM1EknAMKlEryjnEmS troshin_vlad@list.ru"
-}
+]

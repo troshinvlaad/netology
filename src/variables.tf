@@ -1,13 +1,19 @@
 ###cloud vars
-
+variable "token" {
+  type        = string
+  default     = <your_token>
+  description = "OAuth-token; https://cloud.yandex.ru/docs/iam/concepts/authorization/oauth-token"
+}
 
 variable "cloud_id" {
   type        = string
+  default     = "b1gudc9jbdv3q8ldl4ph"
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/cloud/get-id"
 }
 
 variable "folder_id" {
   type        = string
+  default     = "b1glpd0g6s1je9qqjrhk"
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/folder/get-id"
 }
 
@@ -25,20 +31,40 @@ variable "default_cidr" {
 variable "vpc_name" {
   type        = string
   default     = "develop"
-  description = "VPC network & subnet name"
+  description = "VPC network&subnet name"
 }
 
-
-###ssh vars
-/*
-variable "vms_ssh_root_key" {
+variable "security_group_id" {
+  description = "Security Group ID"
+  default     = "enp7eu40bjd5a4nu7pur"
   type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOQz3Yj8zg2ilN0HJfb2wC8CxrJM1EknAMKlEryjnEmS troshin_vlad@list.ru"
-  description = "ssh-keygen -t ed25519"
 }
-*/
 
-variable "metadata" {
-  description = "Метаданные для виртуальных машин"
-  type = map(string)
+variable "vm_web_platform_id" {
+  description = "Platform ID for web VMs"
+  default     = "standard-v3"
+  type        = string
+}
+
+variable "vm_db_platform_id" {
+  description = "Platform ID for database VMs"
+  default     = "standard-v3"
+  type        = string
+}
+
+variable "subnet_id" {
+  description = "e9bnlli59s9ts91mfa81"
+  type        = string
+}
+
+variable "vm_web_image_family" {
+  description = "Семейство образа для виртуальной машины"
+  type        = string
+  default     = "ubuntu-2004-lts"
+}
+
+variable "vm_storage_platform_id" {
+  description = "ID платформы для виртуальной машины storage"
+  default     = "standard-v3"
+  type        = string
 }
