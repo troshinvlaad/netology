@@ -17,3 +17,7 @@
 ![image_5](https://github.com/troshinvlaad/netology/blob/terraform-03/src/screen/5.PNG?raw=true) 
 
 ![image_6](https://github.com/troshinvlaad/netology/blob/terraform-03/src/screen/6.PNG?raw=true)  
+
+### Задача 4
+
+![image_7](https://github.com/troshinvlaad/netology/blob/terraform-03/src/screen/7.PNG?raw=true)  
