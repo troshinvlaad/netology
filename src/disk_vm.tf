@@ -1,10 +1,10 @@
 # Создание трех дисков размером 1 Гб
 resource "yandex_compute_disk" "additional_disks" {
-  count = 3
+  count = var.additional_disks_count
 
   name     = "additional-disk-${count.index + 1}"
   zone     = var.default_zone
-  size     = 1
+  size     = var.additional_disk_size
 }
 
 # Создание виртуальной машины с именем "storage"
@@ -13,14 +13,14 @@ resource "yandex_compute_instance" "storage" {
   platform_id = var.vm_storage_platform_id
 
   resources {
-    cores         = 2
-    memory        = 2
+    cores         = var.vm_storage_cores
+    memory        = var.vm_storage_memory
     core_fraction = 20
   }
 
   boot_disk {
     initialize_params {
-      size   = 10
+      size   = var.boot_disk_size
       image_id = data.yandex_compute_image.ubuntu.image_id
     }
   }

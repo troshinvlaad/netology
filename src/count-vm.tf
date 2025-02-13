@@ -1,11 +1,11 @@
 resource "yandex_compute_instance" "web" {
-  count        = 2
+  count        = var.web_instance_count
   name         = "web-${count.index + 1}"  # Создаем имена web-1 и web-2
   platform_id  = var.vm_web_platform_id
 
   resources {
-    cores         = 2
-    memory        = 2
+    cores         = var.web_instance_cores
+    memory        = var.web_instance_memory
     core_fraction = 20
   }
 

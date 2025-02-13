@@ -1,7 +1,7 @@
 ###cloud vars
 variable "token" {
   type        = string
-  default     = <your token>
+  default     = "y0__xDA1-6eAxjB3RMgrOrXnBLdsKoiWT3PAmvSswclL3YdP_dh6g"
   description = "OAuth-token; https://cloud.yandex.ru/docs/iam/concepts/authorization/oauth-token"
 }
 
@@ -67,4 +67,52 @@ variable "vm_storage_platform_id" {
   description = "ID платформы для виртуальной машины storage"
   default     = "standard-v3"
   type        = string
+}
+
+variable "additional_disks_count" {
+  description = "Количество дополнительных дисков"
+  type        = number
+  default     = 3
+}
+
+variable "additional_disk_size" {
+  description = "Размер дополнительных дисков в Гб"
+  type        = number
+  default     = 1
+}
+
+variable "boot_disk_size" {
+  description = "Размер загрузочного диска в Гб"
+  type        = number
+  default     = 10
+}
+
+variable "vm_storage_cores" {
+  description = "Количество ядер для виртуальной машины"
+  type        = number
+  default     = 2
+}
+
+variable "vm_storage_memory" {
+  description = "Объем памяти для виртуальной машины в Гб"
+  type        = number
+  default     = 2
+}
+
+variable "web_instance_count" {
+  description = "Количество веб-серверов"
+  type        = number
+  default     = 2
+}
+
+variable "web_instance_cores" {
+  description = "Количество ядер для веб-серверов"
+  type        = number
+  default     = 2
+}
+
+variable "web_instance_memory" {
+  description = "Объем памяти для веб-серверов в Гб"
+  type        = number
+  default     = 2
 }
